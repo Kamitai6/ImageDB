@@ -16,3 +16,4 @@ for file in images:
   img = img.resize((640, 480))
   ImageOps.exif_transpose(img)
   img.save(file.with_suffix(".webp"), quality=95)
+  file.unlink()
