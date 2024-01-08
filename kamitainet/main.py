@@ -4,10 +4,12 @@ from PIL import Image, ImageOps
 
 # ディレクトリを取得
 cwd = Path.cwd()
+print(cwd)
 
 # 再帰的にディレクトリ内のpngとjpgの画像を検索
 images = sorted([p for p in cwd.glob('**/*') if re.search('/*\.(jpg|jpeg|png|gif)', str(p))])
 for file in images:
+  print(file)
   # 画像を読み込む
   img = Image.open(file)
   img.convert("RGB")
