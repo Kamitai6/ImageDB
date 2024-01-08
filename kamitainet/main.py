@@ -13,7 +13,7 @@ for file in images:
   # 画像を読み込む
   img = Image.open(file)
   img.convert("RGB")
-  img = img.resize((640, 480))
+  img = img.resize((1280, 960))
   ImageOps.exif_transpose(img)
   img.save(file.with_suffix(".webp"), quality=95)
   file.unlink()
