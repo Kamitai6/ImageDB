@@ -1,3 +1,4 @@
 # requirements
+numpy==1.23.5
 pillow==10.2.0
 pathlib==1.0.1
