@@ -30,8 +30,8 @@ for file in images:
   img = img.resize((width, height))
   ImageOps.exif_transpose(img)
   # 重ねる
-  x = (1280 - img.width) / 2
-  y = 0
+  x = int((1280 - img.width) / 2)
+  y = int(0)
   bg.paste(img, (x, y))
   bg.save(file.with_suffix(".webp"), quality=95)
   file.unlink()
