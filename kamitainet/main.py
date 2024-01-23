@@ -13,7 +13,7 @@ for file in images:
   print(file)
   # 画像を読み込む
   img = Image.open(file)
-  img.convert("RGB")
+  img = img.convert("RGB")
   # 背景画像を作成
   small_img = img.resize((100, 100))
   color_arr = np.array(small_img)
