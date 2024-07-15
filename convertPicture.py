@@ -12,7 +12,7 @@ def select_files_and_format():
     file_paths = filedialog.askopenfilenames(
         title="画像ファイルを選択",
         # filetypes=[("画像ファイル", "*.jpg *.jpeg *.png *.bmp *.gif *.tiff *.webp *.ico *.pdf *.eps *.svg *.jfif *.ppm *.pbm *.pgm *.pnm *.avif")]
-        filetypes=[("画像ファイル", "*.jpg *.jpeg *.png *.bmp *.tiff *.webp *.ico *.pdf *.eps *.svg *.jfif *.ppm *.pbm *.pgm *.pnm *.avif")]
+        filetypes=[("画像ファイル", "*.jpg *.jpeg *.png *.bmp *.tiff *.webp *.ico *.pdf *.eps *.svg *.jfif *.ppm *.pbm *.pgm *.pnm")]
     )
     
     # ファイルが選択されなかった場合は終了
